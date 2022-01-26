@@ -1,0 +1,284 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+/*La partie contact  */
+
+#contact{
+  background-color:#333333;
+  color:white;
+}
+    
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: sans-serif;
+
+}
+
+.fond{
+  margin-top: 73px;
+  width: 100%;
+}
+        
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background-color: #333333;
+  width: 100%;
+  height:100px;
+  box-sizing: border-box;
+  z-index:1000;
+}
+        
+header #logo{
+  height: 50px;
+  line-height: 50px;
+  float: right;
+}
+     
+header nav{
+  float: right;
+  transition: 0.4s;
+  position: fixed;
+  z-index: 99;
+  
+  
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  }
+ ul li {
+    list-style: none;
+
+  }
+   li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+   color: cornsilk;
+    text-decoration: none;
+
+  }
+  a:hover, 
+  a.active
+  {
+    background-color: #333333;
+  }
+  .menu-toggle{
+    color: aliceblue;
+    
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+/*fond*/
+.fond{
+  width: 100%;
+  
+  margin-left: 0px;
+
+}
+.fond img{
+  width: 100%;
+}
+
+.texte{
+ width: 100%;
+ padding-left:20%;
+ position: relative;
+ margin-top: -40%;
+ 
+}
+
+h1{
+  text-align: left;
+  color: #8c1515;
+  font-size: 5vw;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*les explorations*/
+.expo{
+    margin-bottom:80px;
+    margin-top: 40%;
+
+    ;
+}
+.box h3{
+  width:100%;
+color: burlywood;
+  background-color: #8c1515;
+}
+
+.title-card{
+  width:100%;
+ color: cornsilk;
+  background-color: #8c1515;
+}
+.box{
+  background-color: #888;
+}
+
+.card:hover .box{
+  transform: scale(1.05);
+  }
+
+  .card:hover{
+    /*Placeholder*/
+}
+.card{
+  width:80%;
+  text-align: center;
+  border-radius: 6px;
+  padding : 0 10 10 10;
+  cursor: pointer;
+
+  margin-bottom:10px;
+}
+.card p{
+color: darkblue;
+}
+h3{
+  color: #2F4F4F;
+  border-style: double;
+}
+
+.container-fluid{
+  margin:0;
+  }
+
+.map-box{
+  width:100%;
+}
+
+#f{
+    text-align: center;
+    text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;color:#00FFFC;
+font-size: 500%;
+
+}
+
+.marquee-rtl {
+  max-width: 30em;                      /* largeur de la fenêtre */
+  margin: 1em auto 2em;
+  border: 10px  #5252b8;
+  box-shadow: cornsilk;
+  overflow: hidden;                     /* masque tout ce qui dépasse */
+  box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+  
+}
+.marquee-rtl > :first-child {
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2em;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defilement-rtl 15s infinite linear;
+
+
+
+  animation-name: defilement-rtl;       /* référence à la règle @keyframes mise en oeuvre */
+  animation-delay: 3ms;                 /* valeur à ajuster suivant la longueur du message */
+  animation-iteration-count: infinite;  /* boucle continue */
+  animation-timing-function: linear;    /* pas vraiment utile ici */
+}
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0,0,0);      /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%,0,0);  /* position finale à gauche */
+  }
+}
+  
+  
+/*texte animation*/
+h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+h2 {
+  color: #888;
+  font-size: 2em;
+}
+.txt-rotate{
+  font-size: 20px;
+  color: crimson;
+}
+
+
+  @media (max-width: 991px)
+  {
+    header{
+      padding: 0 20px;
+     background-color:#2F4F4F;
+   
+    }
+    .menu-toggle{
+      display: block
+    }
+    header nav {
+      
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 50px);
+  
+      top: 50px;
+      left: 0;
+      transition: 0.5s;
+      
+    }
+    
+      nav ul{
+      display: block;
+      text-align: center;
+    background-color:#B0C4DE;
+    }
+    li a{
+      border-bottom: 1px solid rgb(0, 0, 0);
+
+
+    }
+    #logo{
+      height: 100%;
+      width: 25%;
+      float: right;
+  
+    }
+    h2{
+      margin-top: 10%;
+      font-size: medium;
+    }
+    .fond{
+      margin-top: 48%;
+    }
+   
+
+  
+     
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+             
